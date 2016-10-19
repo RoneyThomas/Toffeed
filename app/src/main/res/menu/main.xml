@@ -5,7 +5,7 @@
         android:id="@+id/action_notifications"
         android:icon="@drawable/ic_menu_notifications"
         android:title="@string/nav_notifications"
-        app:actionLayout="@layout/menu_badge"
+        app:actionLayout="@layout/menu_badge_full"
         app:showAsAction="always"/>
 
 </menu>
