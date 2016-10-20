@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_messages"
+        android:shortcutShortLabel="@string/menu_messages"
+        android:shortcutLongLabel="@string/menu_messages"
+        android:shortcutDisabledMessage="@string/notifications_setting_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="nav_messages"
+            android:targetPackage="me.jakelane.wrapperforfacebook"
+            android:targetClass="me.jakelane.wrapperforfacebook.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
+

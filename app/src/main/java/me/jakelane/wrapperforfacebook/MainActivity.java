@@ -308,6 +308,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mWebView.loadUrl(chooseUrl());
             updateUserInfo();
         }
+        // Entrypoint for Android Shortcut API 25
+        if(getIntent().getDataString()!=null){
+            shortcutSwitch(getIntent().getDataString());
+        }
+    }
+
+    private void shortcutSwitch(String dataString) {
+        switch (dataString){
+            case "nav_messages":
+                mWebView.loadUrl("javascript:(function()%7Btry%7Bdocument.querySelector('%23messages_jewel%20%3E%20a').click()%7Dcatch(_)%7Bwindow.location.href%3D'" + FACEBOOK_URL_BASE_ENCODED + "messages%2F'%7D%7D)()");
+                JavaScriptHelpers.updateNums(mWebView);
+        }
     }
 
     @Override
