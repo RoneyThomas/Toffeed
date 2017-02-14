@@ -189,9 +189,7 @@ public class NotificationService extends IntentService {
         }
 
         // Notification Priority (make LED blink)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            mBuilder.setPriority(Notification.PRIORITY_HIGH);
-        }
+        mBuilder.setPriority(Notification.PRIORITY_HIGH);
 
         // Vibration
         if (mPreferences.getBoolean(SettingsActivity.KEY_PREF_NOTIFICATION_VIBRATE, true)) {
