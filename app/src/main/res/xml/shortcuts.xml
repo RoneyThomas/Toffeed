@@ -3,7 +3,7 @@
     <shortcut
         android:shortcutId="compose"
         android:enabled="true"
-        android:icon="@drawable/ic_menu_messages"
+        android:icon="@drawable/ic_messenger_shortcut"
         android:shortcutShortLabel="@string/menu_messages"
         android:shortcutLongLabel="@string/menu_messages"
         android:shortcutDisabledMessage="@string/notifications_setting_title">
